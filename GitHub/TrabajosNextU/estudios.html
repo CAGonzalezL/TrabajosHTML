@@ -22,7 +22,7 @@
           <h3> Lugar de Nacimiento: <em>San Antonio, Valparaíso. Chile</em> </h3>
     </header>
   </head>
-  <body>
+  <body bgcolor="#00ffff">
     <ul>
       <li><a href="./index.html">Información Personal |</a></li>
       <li><a href="./experiencia.html">Experiencia |</a></li>
@@ -30,7 +30,7 @@
 
     <h2> <strong>Educación</strong> </h2>
 
-    <table border="1", cellpading="8", cellpacing="0">
+    <table border="1", cellpading="10", cellpacing="0">
       <thead>
         <tr>
           <th> <h3>Año</h3> </th>
@@ -60,12 +60,36 @@
         </tr>
       </tbody>
     </table>
-  falta detalles lis desplegable y otros
+
+    <hr>
+    <table width="30%" border="0" cellpacing="0" cellpading="0">
+      <tr>
+        <td>
+          <form autocomplete="on" name="Agregar Estudios" >
+            <fieldset>
+              <legend> <h2><strong>Agregar Estudios</strong></h2> </legend>
+              <p> <strong>Año</strong> <label for="Edad"></label>
+                <input type="number" name="año" placeholder="ej: 2015" min="1980" max="2018" required></p>
+            </br>
+              <label for="Institución"> <strong>Institución:</strong> </label>
+              <input type="text" name="Institución" placeholder="ej: Universidad de Chile" required>
+            </br>
+              <p> <strong>Lugar:</strong>
+                <textarea name="Comentarios" rows="4" cols="26" maxlength="200" required></textarea></p>
+            </br>
+              <p> <strong>¿Culminó?</strong> <input type="radio" name="culmino1" value="Si"><strong>Si</strong><input type="radio" name="culmino2" value="No"><strong>No</strong></p>
+            </br>
+              <input type="submit" name="Enviar" value="Enviar">
+            </fieldset>
+          </form>
+        </td>
+      </tr>
+
+    </table>
+
   </body>
+  <hr>
   <footer>
-    -----------------------------------------------------------------
-    <p> <em><strong>email:</strong></em> claudio.antonio.gl@gmail.com </p>
-    <p> <em><strong>Teléfono:</strong></em>+569 6293 3358 </p>
-    <p> <em><strong>Dirección:</strong></em>Av. Barros Luco N° 2240. Barrancas. San Antnio. Chile </p>
+    <p> <strong>©</strong> <em><strong>email:</strong></em> claudio.antonio.gl@gmail.com | <em><strong>Teléfono:</strong></em>+569 6293 3358 | <em><strong>Dirección:</strong></em>Av. Barros Luco N° 2240. Barrancas. San Antonio. Chile </p>
   </footer>
 </html>
